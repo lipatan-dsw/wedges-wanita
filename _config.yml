@@ -1,1 +1,50 @@
-theme: jekyll-theme-cayman
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: LIPATAN
+description: > # this means to ignore newlines until "baseurl:"
+  Peluang usaha dropship / reseller fashion Bandung.
+  Grosir sepatu, jaket, baju murah.
+  Murahnya berlipat-lipat.
+url: "https://www.lipatan.com" # the base hostname & protocol for your site
+baseurl: "/wedges-wanita" # the subpath of your site, e.g. /blog
+logo-square: img/lipatan-square.png
+logo-rectangle: img/lipatan-rectangle.png
+icon: img/lipatan-square-small.png
+email: lipatanid@gmail.com
+facebook: https://www.facebook.com/lipatanid
+fbmessenger: lipatanid
+twitter: https://twitter.com/lipatanid
+google-plus: https://plus.google.com/+LipatanID
+instagram: https://www.instagram.com/lipatanid
+pinterest: https://www.pinterest.com/lipatanid/
+author: LIPATAN
+twitusername: lipatanid
+disqus-shortname: lipatanid
+address-owner: Jl. Gaga Semanan RT 06 RW 04 No.53, Semanan, Kalideres, Jakarta Barat, 11850
+telp: +62 852 1186 0081
+nstelp: 6285211860081
+bbm: LIPATAN
+line: http://line.me/ti/p/~lipatanid
+bca: 5271271035 a/n Heru Iryanto
+bsm: 7119555706 a/n Heru Iryanto
+google_site_verification: rAE_yObYTNwZzvqreXkPWROyvlkGY1feHdlKCc3thJA
+google_analytics: UA-61959730-3
+google_cse: 004200709654862820302:owlayxkjfs4
+
+#Submodule
+layouts_dir:  /resources/_layouts
+includes_dir: /resources/_includes
+
+# Build settings
+markdown: kramdown
+permalink: /:title
+paginate: 24
+paginate_path: "/page:num"
+gems:
+  - jekyll-paginate

@@ -1,0 +1,50 @@
+---
+layout: product
+title: Jual Wedges Wanita Murah
+description: Jual wedges wanita murah dan keren
+image: https://images.lipatan.com/katalog-catenzo-2017/foto-produk-satuan/299-km-046.jpg
+---
+
+					<div class="features_items"><!--features_items-->
+						<h1 class="title text-center">Wedges Wanita</h1>
+						
+  							{% for post in paginator.posts %}
+  								<div class="col-sm-3">
+								<div class="product-image-wrapper">
+									<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="{{ post.image }}" alt="{{ post.product }}" title="{{ post.product }}" />
+												<p>{{ post.price }}</p>
+												<h2>{{ post.product | truncate: 34 }}</h2>
+												<a href="{{ site.url }}{{ site.baseurl }}/{{ post.permalink }}" class="btn btn-default add-to-cart" title="Beli"><i class="fa fa-shopping-cart"></i>Beli</a>
+											</div>
+											<div class="product-overlay">
+												<div class="overlay-content">
+													<p>{{ post.price }}</p>
+													<h2>{{ post.product | truncate: 34 }}</h2>
+													<a href="{{ site.url }}{{ site.baseurl }}/{{ post.permalink }}" class="btn btn-default add-to-cart" title="Beli"><i class="fa fa-shopping-cart"></i>Beli</a>
+												</div>
+											</div>
+									</div>
+								</div>
+								</div>
+  							{% endfor %}
+					
+					</div><!--features_items-->
+
+					<!-- Pagination links -->
+					<div style="text-align: center;">
+					<div class="pagination">
+					  {% if paginator.previous_page %}
+					    <a href="{{ site.url }}{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous">Previous</a>
+					  {% else %}
+					    <span class="previous">Previous</span>
+					  {% endif %}
+					  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+					  {% if paginator.next_page %}
+					    <a href="{{ site.url }}{{ site.baseurl }}{{ paginator.next_page_path }}" class="next">Next</a>
+					  {% else %}
+					    <span class="next ">Next</span>
+					  {% endif %}
+					</div>
+					</div>
